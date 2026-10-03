@@ -1,0 +1,1 @@
+import './globals.css'; export const metadata={title:'Prism Path',description:'Turn the tiles and connect the light.'}; export default function Layout({children}:{children:React.ReactNode}){return <html lang='en'><body>{children}</body></html>}

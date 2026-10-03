@@ -1,0 +1,215 @@
+{
+  "source_tip": "bd89d7271857835b9e286940d799fb74fddf806f",
+  "commits": [
+    {
+      "commit": "523053fcd8fb5b68ca13b2242846e1078ba60c0c",
+      "authored_at": "2026-09-06T05:35:01-05:00",
+      "subject": "Build Prism Path puzzle game and preview shop"
+    },
+    {
+      "commit": "d09fc0a693921d72a39979df7e4da82eced17f82",
+      "authored_at": "2026-09-06T06:18:47-05:00",
+      "subject": "Add guided puzzles, colored beams, constellation progress and chapter samples"
+    },
+    {
+      "commit": "43dded44e1755d97d6908ad304e11af313196ba0",
+      "authored_at": "2026-09-06T06:38:20-05:00",
+      "subject": "Add music, ad placements, ad removal and audio store upgrades"
+    },
+    {
+      "commit": "370fce5bbef506d07f71af10e84933fba9ee35a3",
+      "authored_at": "2026-09-06T06:40:41-05:00",
+      "subject": "Keep free chapter navigation independent of sample progress"
+    },
+    {
+      "commit": "26a4ed22348a6526d38bc108e481d1c4d56b8f6f",
+      "authored_at": "2026-09-06T06:59:13-05:00",
+      "subject": "Delay advanced mechanics, strengthen progression effects and streamline store settings"
+    },
+    {
+      "commit": "49ce0fd35aa526cdd9d0903ecb51b27e329a4d10",
+      "authored_at": "2026-09-12T06:33:46-03:00",
+      "subject": "Build separate Prism Path improvements edition with resumable play and constellation journey"
+    },
+    {
+      "commit": "3d6d9d1facf15f573444844c98bb7e33a17a459c",
+      "authored_at": "2026-09-12T06:35:39-03:00",
+      "subject": "Register isolated improvements preview"
+    },
+    {
+      "commit": "f139ebcbf14517f7eef7573920190c44f02fee4c",
+      "authored_at": "2026-09-12T06:49:16-03:00",
+      "subject": "Add flowing energy and tile connection feedback"
+    },
+    {
+      "commit": "1fc67145662a03d0a8c6140c37a33633a86470a4",
+      "authored_at": "2026-09-12T06:58:17-03:00",
+      "subject": "Soften tile tap and celebrate completed energy paths"
+    },
+    {
+      "commit": "4d5444cf3661c9a5487d2d7b1a1bcfd386c5e29c",
+      "authored_at": "2026-09-12T07:08:11-03:00",
+      "subject": "Raise effects above default background music"
+    },
+    {
+      "commit": "d93e9d7f06ebdba6b26626dd28c34755fc4058d7",
+      "authored_at": "2026-09-12T07:19:04-03:00",
+      "subject": "Reveal named constellations as campaign progress grows"
+    },
+    {
+      "commit": "fff5bd6b8efd1ace833ba1b033a2f18616e81bfd",
+      "authored_at": "2026-09-12T07:26:12-03:00",
+      "subject": "Clarify receiver objectives and reveal constellation artwork"
+    },
+    {
+      "commit": "96c954d17997ea120ae22bedd72ce75bf6a7f044",
+      "authored_at": "2026-09-12T08:05:01-03:00",
+      "subject": "Add completion music swell, required locked light, and nearby next button"
+    },
+    {
+      "commit": "8042eafc328d201e55cd3a2feb7994044eb9f030",
+      "authored_at": "2026-09-12T08:34:53-03:00",
+      "subject": "Extend completion swell with a stronger sustained crest"
+    },
+    {
+      "commit": "fb86566458cd83e65edd058f35c192da9a0e1ac9",
+      "authored_at": "2026-09-12T08:39:54-03:00",
+      "subject": "Add distinct completion music and high contrast flowing light"
+    },
+    {
+      "commit": "b047b988512fe319db9f210ac881b8b28f0bdc0b",
+      "authored_at": "2026-09-12T08:50:33-03:00",
+      "subject": "Crossfade varied progression music and stream glowing particles"
+    },
+    {
+      "commit": "a26926d2c370b0f85846811e44fe43715be5fd06",
+      "authored_at": "2026-09-12T09:04:43-03:00",
+      "subject": "Apply fine thread and soft ribbon beam direction"
+    },
+    {
+      "commit": "f1010b084f832afa52f6b59071e4e9fb64f1ed0f",
+      "authored_at": "2026-09-12T14:21:11-03:00",
+      "subject": "Add point scoring, monthly ad-free demo, and growing star atlas"
+    },
+    {
+      "commit": "b9def59ada8e46fcad5bdfdc0faf226575f914b2",
+      "authored_at": "2026-09-12T14:32:48-03:00",
+      "subject": "Score each remaining second with progressive 2x to 12x Pulse caps"
+    },
+    {
+      "commit": "6f2c56a28a7637cb03569aa214d5f396e7cc33e7",
+      "authored_at": "2026-09-12T14:47:58-03:00",
+      "subject": "Reveal a connected celestial panorama with accessible progress map"
+    },
+    {
+      "commit": "5048e2d69c274803d769ded36fc3b2957b76745c",
+      "authored_at": "2026-09-12T15:01:04-03:00",
+      "subject": "Celebrate move targets and enable campaign replay and full restart"
+    },
+    {
+      "commit": "e8aaa600f74a6a4edd64cff38ead499ba99b91d7",
+      "authored_at": "2026-09-12T15:08:55-03:00",
+      "subject": "Show move target celebration over the puzzle board"
+    },
+    {
+      "commit": "74670c532a474ef67151035a4223665fe384a9ba",
+      "authored_at": "2026-09-12T15:34:32-03:00",
+      "subject": "Add player accounts, leaderboard, streak rewards and Stardust unlocks"
+    },
+    {
+      "commit": "a6dac25b7dbeaf33500067feebca077c0b4df0a0",
+      "authored_at": "2026-09-12T15:48:11-03:00",
+      "subject": "Add a separate Relax experience and configurable social sign-in providers"
+    },
+    {
+      "commit": "fab3a285503329959585bce31d626e1ea0750753",
+      "authored_at": "2026-09-12T15:59:34-03:00",
+      "subject": "Save guest Stardust locally and sync verified rewards with board notifications"
+    },
+    {
+      "commit": "f41f5c7bc8a2376ed9d8f88b8ed2b81d12a34948",
+      "authored_at": "2026-09-12T16:00:58-03:00",
+      "subject": "Show synced wallet balance before nickname setup"
+    },
+    {
+      "commit": "d5073823ca46d8d9e320da37811345e36864b5c6",
+      "authored_at": "2026-09-12T16:06:58-03:00",
+      "subject": "Repair Relax audio playback and expose constellation progress in star menus"
+    },
+    {
+      "commit": "a1b57bc2538d0b88d94775ed64a3af4b3d4a832f",
+      "authored_at": "2026-09-12T16:24:08-03:00",
+      "subject": "Brighten Relax music and preload audible interaction effects"
+    },
+    {
+      "commit": "4fa28dd8a645b56ec5d5aadb285c1193d216bc82",
+      "authored_at": "2026-09-12T16:49:05-03:00",
+      "subject": "Give Relax a gentle arrangement of the Journey sound palette"
+    },
+    {
+      "commit": "e9dbf30cfac302d8fb523e9bd7296263a82ee024",
+      "authored_at": "2026-09-12T16:50:01-03:00",
+      "subject": "Shorten Stardust toast to three seconds with a soft exit fade"
+    },
+    {
+      "commit": "940c7517bf98921ab951c387a09f656796d075d2",
+      "authored_at": "2026-09-12T16:58:15-03:00",
+      "subject": "Replace Relax chimes with soft bowed string chords"
+    },
+    {
+      "commit": "379b9611c82cb7545ba6f89643b095931f992550",
+      "authored_at": "2026-09-12T17:02:29-03:00",
+      "subject": "Unify Relax audio around a subtle felt piano arrangement"
+    },
+    {
+      "commit": "275e137dd29519251eb7f5d4f24df990dd6066ce",
+      "authored_at": "2026-09-12T17:08:38-03:00",
+      "subject": "Add remembered Relax instruments and keep tile feedback nonmusical"
+    },
+    {
+      "commit": "da0816168baf202222c4c3aefe6b9680932ddeb4",
+      "authored_at": "2026-09-12T17:13:38-03:00",
+      "subject": "Place Relax instrument selector above Return to Journey"
+    },
+    {
+      "commit": "f2112b557810131bb8a7bbf013d5f75e6f231ef3",
+      "authored_at": "2026-09-12T17:51:09-03:00",
+      "subject": "Add gentle Relax completion and next-puzzle confirmation sounds"
+    },
+    {
+      "commit": "2d447840509cf900203f0b17dd3a0c4ac3e7c20f",
+      "authored_at": "2026-09-12T17:52:17-03:00",
+      "subject": "Make Relax tile turns shorter and more ticky"
+    },
+    {
+      "commit": "b63125687084a1ed219cecc78162d04bc378afb4",
+      "authored_at": "2026-09-12T17:57:30-03:00",
+      "subject": "Use dry Relax ticks and a brief nonmusical completion patter"
+    },
+    {
+      "commit": "5d818f5e1f4f0abdd7c357fd3b22c17d3d4efa94",
+      "authored_at": "2026-09-12T18:30:06-03:00",
+      "subject": "Distinguish lively Relax ticks, celebratory pops, and next-path swishes"
+    },
+    {
+      "commit": "cfaf3c452af2386c7e7757bce176c266254804d3",
+      "authored_at": "2026-09-12T18:34:46-03:00",
+      "subject": "Soften Relax feedback with warm felt-key melodic signatures"
+    },
+    {
+      "commit": "22a27b6aff5e95e4090624cd6501e1999ca53382",
+      "authored_at": "2026-09-12T18:37:36-03:00",
+      "subject": "Give Relax completion and next path distinct gentle melodic voices"
+    },
+    {
+      "commit": "a49a4cb5b0917e51ec09484281647c94764f6bb4",
+      "authored_at": "2026-09-12T16:36:40-07:00",
+      "subject": "Coordinate Journey rewards, reveal map progress, and author fifteen opening puzzles"
+    },
+    {
+      "commit": "bd89d7271857835b9e286940d799fb74fddf806f",
+      "authored_at": "2026-09-12T17:06:21-07:00",
+      "subject": "Add gentle path variety and clearer progression goals"
+    }
+  ]
+}

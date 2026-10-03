@@ -1,0 +1,21 @@
+# Player accounts and Stardust
+
+Guest Journey play now earns Stardust locally in `prism-guest-dust-v1`. Each reward retains the solved puzzle's action history, date and a stable receipt ID. Local balances deduplicate by reward reason, survive game restarts, and can be viewed before signing in. Existing historic stars without action records are not retrospectively credited. Relax Mode remains separate from currency and competitive rewards.
+
+On sign-in, pending guest records automatically sync in date order, even before the player chooses a public nickname. The server replays the puzzle history and calculates reward amounts itself; it never accepts a client-supplied balance. Guest currency imports do not add ranked points or ranked statistics. `guest_claims` permanently binds each receipt to one account, and wallet reason uniqueness prevents double credit against prior account earnings. Transfers and credits are one D1 batch; retries after lost responses are idempotent. Claim history and the wallet survive resets. Guest dates and elapsed times remain client-reported, so this is not a cheat-proof offline economy. Clearing browser storage before transfer loses unsynced local rewards.
+
+An unobtrusive five-second Stardust toast appears at the top of the puzzle for local earnings, account earnings and confirmed sync credits. It does not intercept tile input or cover the central move-target celebration, and follows reduced-motion preferences.
+
+This browser preview uses Sites Sign in with ChatGPT and the platform D1 binding `DB`. Authentication comes from dispatch-owned headers via `app/chatgpt-auth.ts`; user IDs in request bodies never authorize writes. Leaderboard listing is opt-in and exposes nicknames and aggregate game statistics, not email addresses. Native iOS authentication and wallet integration are not part of this change.
+
+`db/schema.ts` owns the schema; immutable Drizzle migrations are bundled by the Sites plugin for deployment. Do not execute DDL in request handlers. Anonymous visitors can play locally and read opted-in standings. Historical guest scores are not uploaded into the ranked leaderboard. Signed-in completions synchronize best points and stars to other devices; incomplete attempts and preferences remain device-local.
+
+`POST /api/players` supports profile, finish and redeem actions. Finish replays the complete rotation/hint/undo history against the canonical puzzle and required objectives. Elapsed Pulse time is client-reported: this is a preview leaderboard, not a cheat-proof competitive system. Daily results can sync up to seven days later; streak awards use the UTC server receipt day, Monday–Sunday week and calendar month. The browser retains a per-account retry queue with stable completion IDs. Invalid old results can be explicitly discarded without erasing local play progress.
+
+Points are the sum of each puzzle's best score plus once-per-period streak bonuses. Daily, weekly and monthly bonuses start at 50, 250 and 1,000 points and scale with the streak, capped at 7, 4 and 3 periods respectively. Playing once within each consecutive period maintains its streak.
+
+Stardust uses an append-only ledger keyed by account and reward reason. First clear: 10; first move target: 5; first completed constellation: 25. Streaks award 5, 25 and 100 times the same capped daily/weekly/monthly counts. Redemption inserts one negative ledger entry with an atomic sufficient-balance condition. Its unique reason prevents repeated charging. Prices are Aurora 150, Sunset 150, Night music 200, Crystal sounds 100 and After hours 500. Ad removal is never a valid redemption product. Currency has no cash value.
+
+Restart clears the player's best scores, completion statistics, activity and point rewards, but preserves the wallet ledger and its unlocks, preventing repeat Stardust grants after a reset. Cash purchases and ads remain browser demonstrations. No payment provider or native StoreKit pricing was changed.
+
+Validation: `node --experimental-strip-types --test scripts/*.test.ts`, `node_modules/.bin/tsc --noEmit`, and the production build. Automated tests cover puzzle replay, date boundaries, duplicate rewards, account isolation of wallet spending, insufficient balances and constellation completion. Live interactive sign-in and browser visual testing remain separate checks.

@@ -1,0 +1,8 @@
+import {sqliteTable,text,integer,real,primaryKey,index} from 'drizzle-orm/sqlite-core';
+export const players=sqliteTable('players',{uid:text('uid').primaryKey(),name:text('name').notNull(),listed:integer('listed').notNull().default(0)});
+export const finishes=sqliteTable('finishes',{id:text('id').primaryKey(),uid:text('uid').notNull(),puzzle:text('puzzle').notNull(),points:integer('points').notNull(),stars:integer('stars').notNull(),moves:integer('moves').notNull(),hints:integer('hints').notNull(),seconds:real('seconds').notNull(),day:text('day').notNull()},t=>[index('finishes_player').on(t.uid)]);
+export const best=sqliteTable('best',{uid:text('uid').notNull(),puzzle:text('puzzle').notNull(),points:integer('points').notNull(),stars:integer('stars').notNull(),moves:integer('moves').notNull()},t=>[primaryKey({columns:[t.uid,t.puzzle]})]);
+export const activity=sqliteTable('activity',{uid:text('uid').notNull(),day:text('day').notNull()},t=>[primaryKey({columns:[t.uid,t.day]})]);
+export const rewards=sqliteTable('rewards',{uid:text('uid').notNull(),period:text('period').notNull(),kind:text('kind').notNull(),points:integer('points').notNull(),streak:integer('streak').notNull()},t=>[primaryKey({columns:[t.uid,t.period,t.kind]})]);
+export const walletEntries=sqliteTable('wallet_entries',{uid:text('uid').notNull(),reason:text('reason').notNull(),amount:integer('amount').notNull()},t=>[primaryKey({columns:[t.uid,t.reason]})]);
+export const guestClaims=sqliteTable('guest_claims',{id:text('id').primaryKey(),uid:text('uid').notNull(),puzzle:text('puzzle').notNull(),day:text('day').notNull(),target:integer('target').notNull()},t=>[index('guest_claims_player').on(t.uid)]);
